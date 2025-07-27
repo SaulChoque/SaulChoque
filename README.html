@@ -1,436 +1,114 @@
-<!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Skills</title>
-            <style>
-/* From extension vscode.github */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\saulc\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.18\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
-.vscode-dark img[src$=\#gh-light-mode-only],
-.vscode-light img[src$=\#gh-dark-mode-only],
-.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
-.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
-	display: none;
-}
-
-</style>
-            
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
-<style>
-            body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
-                font-size: 14px;
-                line-height: 1.6;
-            }
-        </style>
-        <style>
-.task-list-item {
-    list-style-type: none;
-}
-
-.task-list-item-checkbox {
-    margin-left: -20px;
-    vertical-align: middle;
-    pointer-events: none;
-}
-</style>
-<style>
-:root {
-  --color-note: #0969da;
-  --color-tip: #1a7f37;
-  --color-warning: #9a6700;
-  --color-severe: #bc4c00;
-  --color-caution: #d1242f;
-  --color-important: #8250df;
-}
-
-</style>
-<style>
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-note: #2f81f7;
-    --color-tip: #3fb950;
-    --color-warning: #d29922;
-    --color-severe: #db6d28;
-    --color-caution: #f85149;
-    --color-important: #a371f7;
-  }
-}
-
-</style>
-<style>
-.markdown-alert {
-  padding: 0.5rem 1rem;
-  margin-bottom: 16px;
-  color: inherit;
-  border-left: .25em solid #888;
-}
-
-.markdown-alert>:first-child {
-  margin-top: 0
-}
-
-.markdown-alert>:last-child {
-  margin-bottom: 0
-}
-
-.markdown-alert .markdown-alert-title {
-  display: flex;
-  font-weight: 500;
-  align-items: center;
-  line-height: 1
-}
-
-.markdown-alert .markdown-alert-title .octicon {
-  margin-right: 0.5rem;
-  display: inline-block;
-  overflow: visible !important;
-  vertical-align: text-bottom;
-  fill: currentColor;
-}
-
-.markdown-alert.markdown-alert-note {
-  border-left-color: var(--color-note);
-}
-
-.markdown-alert.markdown-alert-note .markdown-alert-title {
-  color: var(--color-note);
-}
-
-.markdown-alert.markdown-alert-important {
-  border-left-color: var(--color-important);
-}
-
-.markdown-alert.markdown-alert-important .markdown-alert-title {
-  color: var(--color-important);
-}
-
-.markdown-alert.markdown-alert-warning {
-  border-left-color: var(--color-warning);
-}
-
-.markdown-alert.markdown-alert-warning .markdown-alert-title {
-  color: var(--color-warning);
-}
-
-.markdown-alert.markdown-alert-tip {
-  border-left-color: var(--color-tip);
-}
-
-.markdown-alert.markdown-alert-tip .markdown-alert-title {
-  color: var(--color-tip);
-}
-
-.markdown-alert.markdown-alert-caution {
-  border-left-color: var(--color-caution);
-}
-
-.markdown-alert.markdown-alert-caution .markdown-alert-title {
-  color: var(--color-caution);
-}
-
-</style>
-        
-        </head>
-        <body class="vscode-body vscode-light">
-            <!-- README.md is generated from README.Rmd. Please edit that file -->
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<img height="150px" src="./assets/images/mandarina.png">
+<br>
+Hi, my name is Saul, I'm from bolivia 
+<br>
+<blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/reel/DEloMYfsRAF/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DEloMYfsRAF/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DEloMYfsRAF/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida por spongebob pantaloni pătrați (@romanian_spongebob)</a></p></div></blockquote>
+<script async="" src="//www.instagram.com/embed.js"></script>
+<br>
+and I'm into computer stuff I guess
 <ul>
-<li>Pronouns: She/Her</li>
+<li>Pronouns: He/Him</li>
 <li>How to reach me:
 <ul>
-<li>mastodon:
-<a href="https://fosstodon.org/web/@Drmowinckels">@DrMowinckels@fosstodon.org</a></li>
-<li>website: <a href="https://drmowinckels.io/">DrMowinckels</a></li>
+<li>email:<br>
+<a href="baulchoc@gmail.com">baulchoc@gmail.com</a></li>
+<li>website:<br>
+<a href="http://baluchop.sendbol.lat/">Baluchop</a></li>
 </ul>
 </li>
 </ul>
-<p>I’m part of the <a href="https://rladies.org/">R-Ladies</a> global team, where I
-particularly focus on the website development and maintenance, as well
-as the YouTube channel. I am a Certified <a href="https://software-carpentry.org/">Sorftware
-Carpentry</a> Instructor, where I am able
-to teach git, bash and R lessons, and a Certified <a href="https://education.rstudio.com/trainers/people/mowinckel+athanasia/">Posit Tidyverse
-instructor</a>.</p>
-<p>I work as a staff scientist at <a href="www.oslobrains.no">the Center for Lifespan Changes in Brain
-and Cognition</a> at the University of Oslo.</p>
-<p><a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api?username=drmowinckels&amp;show_icons=true&amp;theme=transparent" alt="GitHub
-stats"></a></p>
-<h2 id="skills">Skills</h2>
+<h2 id="about-me">About Me </h2>
+<p>Currently, I'm studying a Software Development degree at UMSA.<br>
+I’m volunteering at <a href="https://asoblockchainbolivia.org/">AsoblockchainBolivia</a> where I particularly focus on Web 3 solutions and maintenance of Web 2 projects.</p>
+<p>I making an internship as a software developer at <a href="https://blockchainconsultora.com/es">BlockchainConsultora</a> mostly doing web 3 stuff too.</p>
+<p>Aaaalso, I have a YouTube channel (which I don't use {I'll upload something eventually just wait} ).</p>
+<h2 id="skills">Skills </h2>
 <table border="1px solid black" style="margin: 5px">
-<tr>
-<td>
-<b style="font-size:30px">I have</b>
+<tbody><tr><td>
+<img height="70px" src="https://user-images.githubusercontent.com/74038190/212280823-79088828-a258-4a4d-8d6c-96315d5a07af.gif">
+<img height="70px" src="./assets/logos/csharp.gif">
+<img height="70px" src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif">      
+<img height="70px" src="./assets/logos/mongo.gif">
+<img height="70px" src="./assets/logos/flutter.png">
+<img height="70px" src="./assets/logos/nodejs.gif">   
+<img height="70px" src="./assets/logos/solidity.gif">
+<img height="70px" src="./assets/logos/github.gif">
+<img height="70px" src="./assets/logos/html.gif">     
+<img height="70px" src="./assets/logos/css.gif">
+<img height="70px" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBoZWlnaHQ9IjI1MDAiIHZpZXdCb3g9IjAgLS4xMTM3NjYwMSA0OS43NDI0NTc4NSA1MS4zMTY5MDg1OSIgd2lkdGg9IjI0MTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTQ5LjYyNiAxMS41NjRhLjgwOS44MDkgMCAwIDEgLjAyOC4yMDl2MTAuOTcyYS44LjggMCAwIDEgLS40MDIuNjk0bC05LjIwOSA1LjMwMnYxMC41MDljMCAuMjg2LS4xNTIuNTUtLjQuNjk0bC0xOS4yMjMgMTEuMDY2Yy0uMDQ0LjAyNS0uMDkyLjA0MS0uMTQuMDU4LS4wMTguMDA2LS4wMzUuMDE3LS4wNTQuMDIyYS44MDUuODA1IDAgMCAxIC0uNDEgMGMtLjAyMi0uMDA2LS4wNDItLjAxOC0uMDYzLS4wMjYtLjA0NC0uMDE2LS4wOS0uMDMtLjEzMi0uMDU0bC0xOS4yMTktMTEuMDY2YS44MDEuODAxIDAgMCAxIC0uNDAyLS42OTR2LTMyLjkxNmMwLS4wNzIuMDEtLjE0Mi4wMjgtLjIxLjAwNi0uMDIzLjAyLS4wNDQuMDI4LS4wNjcuMDE1LS4wNDIuMDI5LS4wODUuMDUxLS4xMjQuMDE1LS4wMjYuMDM3LS4wNDcuMDU1LS4wNzEuMDIzLS4wMzIuMDQ0LS4wNjUuMDcxLS4wOTMuMDIzLS4wMjMuMDUzLS4wNC4wNzktLjA2LjAyOS0uMDI0LjA1NS0uMDUuMDg4LS4wNjloLjAwMWw5LjYxLTUuNTMzYS44MDIuODAyIDAgMCAxIC44IDBsOS42MSA1LjUzM2guMDAyYy4wMzIuMDIuMDU5LjA0NS4wODguMDY4LjAyNi4wMi4wNTUuMDM4LjA3OC4wNi4wMjguMDI5LjA0OC4wNjIuMDcyLjA5NC4wMTcuMDI0LjA0LjA0NS4wNTQuMDcxLjAyMy4wNC4wMzYuMDgyLjA1Mi4xMjQuMDA4LjAyMy4wMjIuMDQ0LjAyOC4wNjhhLjgwOS44MDkgMCAwIDEgLjAyOC4yMDl2MjAuNTU5bDguMDA4LTQuNjExdi0xMC41MWMwLS4wNy4wMS0uMTQxLjAyOC0uMjA4LjAwNy0uMDI0LjAyLS4wNDUuMDI4LS4wNjguMDE2LS4wNDIuMDMtLjA4NS4wNTItLjEyNC4wMTUtLjAyNi4wMzctLjA0Ny4wNTQtLjA3MS4wMjQtLjAzMi4wNDQtLjA2NS4wNzItLjA5My4wMjMtLjAyMy4wNTItLjA0LjA3OC0uMDYuMDMtLjAyNC4wNTYtLjA1LjA4OC0uMDY5aC4wMDFsOS42MTEtNS41MzNhLjgwMS44MDEgMCAwIDEgLjggMGw5LjYxIDUuNTMzYy4wMzQuMDIuMDYuMDQ1LjA5LjA2OC4wMjUuMDIuMDU0LjAzOC4wNzcuMDYuMDI4LjAyOS4wNDguMDYyLjA3Mi4wOTQuMDE4LjAyNC4wNC4wNDUuMDU0LjA3MS4wMjMuMDM5LjAzNi4wODIuMDUyLjEyNC4wMDkuMDIzLjAyMi4wNDQuMDI4LjA2OHptLTEuNTc0IDEwLjcxOHYtOS4xMjRsLTMuMzYzIDEuOTM2LTQuNjQ2IDIuNjc1djkuMTI0bDguMDEtNC42MTF6bS05LjYxIDE2LjUwNXYtOS4xM2wtNC41NyAyLjYxLTEzLjA1IDcuNDQ4djkuMjE2em0tMzYuODQtMzEuMDY4djMxLjA2OGwxNy42MTggMTAuMTQzdi05LjIxNGwtOS4yMDQtNS4yMDktLjAwMy0uMDAyLS4wMDQtLjAwMmMtLjAzMS0uMDE4LS4wNTctLjA0NC0uMDg2LS4wNjYtLjAyNS0uMDItLjA1NC0uMDM2LS4wNzYtLjA1OGwtLjAwMi0uMDAzYy0uMDI2LS4wMjUtLjA0NC0uMDU2LS4wNjYtLjA4NC0uMDItLjAyNy0uMDQ0LS4wNS0uMDYtLjA3OGwtLjAwMS0uMDAzYy0uMDE4LS4wMy0uMDI5LS4wNjYtLjA0Mi0uMS0uMDEzLS4wMy0uMDMtLjA1OC0uMDM4LS4wOXYtLjAwMWMtLjAxLS4wMzgtLjAxMi0uMDc4LS4wMTYtLjExNy0uMDA0LS4wMy0uMDEyLS4wNi0uMDEyLS4wOXYtMjEuNDgzbC00LjY0NS0yLjY3Ni0zLjM2My0xLjkzNHptOC44MS01Ljk5NC04LjAwNyA0LjYwOSA4LjAwNSA0LjYwOSA4LjAwNi00LjYxLTguMDA2LTQuNjA4em00LjE2NCAyOC43NjQgNC42NDUtMi42NzR2LTIwLjA5NmwtMy4zNjMgMS45MzYtNC42NDYgMi42NzV2MjAuMDk2em0yNC42NjctMjMuMzI1LTguMDA2IDQuNjA5IDguMDA2IDQuNjA5IDguMDA1LTQuNjF6bS0uODAxIDEwLjYwNS00LjY0Ni0yLjY3NS0zLjM2My0xLjkzNnY5LjEyNGw0LjY0NSAyLjY3NCAzLjM2NCAxLjkzN3ptLTE4LjQyMiAyMC41NjEgMTEuNzQzLTYuNzA0IDUuODctMy4zNS04LTQuNjA2LTkuMjExIDUuMzAzLTguMzk1IDQuODMzeiIgZmlsbD0iI2ZmMmQyMCIvPjwvc3ZnPg==">
+<img height="70px" src="./assets/logos/react.gif">
+<img height="70px" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBoZWlnaHQ9Ijk2NiIgdmlld0JveD0iMCAwIDI2NC41ODMzMyAyNTUuNTg3NTEiIHdpZHRoPSIxMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0xNTMuMzM4NDUgNDUuNjUyNDgxYy0xLjgwOTM0IDAtMy40ODk0NC4zODc3MjktNS4wNDAzMi45MDQ2NzMgMy4yOTU1OCAyLjE5NzA2IDUuMTA0OTMgNS4xMDQ5NjEgNi4wMDk2MyA4LjQwMDU1MS4wNjQ4LjQ1MjMzLjE5Mzg2Ljc3NTQ0NC4yNTg1NiAxLjIyNzc1OS4wNjQ4LjM4NzcyOS4xMjkxNi43NzU0NDQuMTI5MTYgMS4xNjMxNzEuMjU4NiA1LjY4NjUwOS0xLjQ4NjI4IDYuMzk3MzIzLTIuNzE0MDMgOS43NTc1NDMtMS44NzM5OCA0LjMyOTUyOS0xLjM1NzA0IDguOTgyMTMzLjkwNDY2IDEyLjczMDA3OS4xOTM4Ny40NTIzMTguNDUyMzQuOTY5Mjc1Ljc3NTQ2IDEuNDIxNjE4LTIuNDU1NTgtMTYuMzQ4NzU5IDExLjE3OTE5LTE4LjgwNDMwNCAxMy42OTkzMi0yMy45MDkyNC4xOTM4Ni00LjQ1ODc2MS0zLjQ4OTQ0LTcuNDMxMjYzLTYuMzk3MzEtOS40OTkwOTItMi43Nzg2NC0xLjY4MDEwNC01LjI5ODg0LTIuMTk3MDYyLTcuNjI1MTMtMi4xOTcwNjJ6bTIwLjU0OTAzIDMuNjgzMzE4Yy0uMjU4NTggMS40ODYyNDctLjA2NDcgMS4wOTg1My0uMTI5MTMgMS44NzM5NzMtLjA2NDcuNTE2OTQ1LS4wNjQ3IDEuMTYzMTU3LS4xMjkxNCAxLjY4MDEwMi0uMTI5MTQuNTE2OTU5LS4yNTg2IDEuMDMzOTA0LS40NTIzNiAxLjU1MDg4Ni0uMTI5MTMuNTE2OTQ1LS4zMjMwOSAxLjAzMzkwMy0uNTE2OTQgMS41NTA4NDctLjI1ODYuNTE2OTgzLS40NTIzNC45NjkzMDEtLjcxMDgyIDEuNDg2MjU4LS4xOTM4NS4yNTg1ODUtLjMyMzA5LjUxNjk0NS0uNTE2OTUuNzc1NDQzLS4xMjkxNC4xOTM4NTctLjI1ODU4LjM4NzcxNS0uMzg3NzEuNTgxNTcyLS4zMjMwOS40NTIzNTUtLjY0NjIxLjkwNDY3My0uOTY5MjkgMS4yOTIzODctLjM4Nzc0LjM4NzcyOS0uNzEwODMuODQwMDQ2LTEuMTYzMTkgMS4xNjMxNzF2LjA2NDdjLS4zODc3MS4zMjMxLS43NzU0My43MTA4MTUtMS4yMjc3NSAxLjAzMzkwMy0xLjM1NzAyIDEuMDMzOTAyLTIuOTA3ODcgMS44MDkzNDQtNC4zMjk1MiAyLjc3ODY0NC0uNDUyMzEuMzIzMDg4LS45MDQ2OC41ODE1ODctMS4yOTIzOC45NjkzLS40NTIzMy4zMjMwODgtLjg0MDA2LjY0NjE3Ni0xLjIyNzc2IDEuMDMzOTAzLS40NTIzNi4zODc3MTUtLjc3NTQ1Ljc3NTQ0Mi0xLjE2MzE4IDEuMjI3Nzg0LS4zMjMwOS4zODc3MjgtLjcxMDguODQwMDQ4LS45NjkyNyAxLjI5MjQwMi0uMzIzMTIuNDUyMzE3LS42NDYyLjkwNDY2MS0uOTA0NyAxLjM1Njk5LS4yNTg1Ny41MTY5NDQtLjQ1MjMzLjk2OTI5OS0uNzEwODEgMS40ODYyNDUtLjE5Mzg1LjUxNjk0NC0uMzg3NzMuOTY5MzAxLS41MTY5NSAxLjQ4NjI0NC0uMTkzODYuNTgxNTg2LS4zMjMxIDEuMDk4NTQ0LS40NTIzNCAxLjYxNTUxNC0uMDY0Ny4yNTg1ODMtLjA2NDcuNTgxNTYtLjEyOTE0Ljg0MDA0NS0uMDY0OC4yNTg1ODQtLjA2NDguNTE2OTQ1LS4xMjkxMy43NzU0NDMgMCAuNTE2OTQ0LS4wNjQ3IDEuMDk4NTMtLjA2NDcgMS42MTU0NzUgMCAuMzg3NzI3IDAgLjc3NTQ0MS4wNjQ3IDEuMTYzMTY5IDAgLjUxNjk0Ni4wNjQ3IDEuMDMzODkyLjE5Mzg1IDEuNjE1NDc2LjA2NDcuNTE2OTQ0LjE5Mzg0IDEuMDMzOTAyLjMyMzEyIDEuNTUwODg1LjE5Mzg2LjUxNjk0NC4zMjMxIDEuMDMzOTAyLjUxNjk0IDEuNTUwODQ3LjEyOTE2LjMyMzEyNi4zMjMwOS42NDYyMTMuNDUyMzYuOTA0NjczbC0xNC44NjI1Mi01Ljc1MTE0Yy0yLjUyMDE4LS43MTA4MTUtNC45NzU3LTEuMzU2OTktNy40OTU4OC0xLjkzODU3Ni0xLjM1Ny0uMzIzMDg3LTIuNzE0LS42NDYxOTgtNC4wNzEwMi0uOTY5Mjk5LTMuODc3MTktLjc3NTQzLTcuODE4OTUtMS4zNTY5OTEtMTEuNzYwNzYtMS43NDQ3MDUtLjEyOTEzIDAtLjE5Mzg1LS4wNjQ3MS0uMzIzMDktLjA2NDcxLTMuODc3Mi0uMzg3NzE0LTcuNjg5NzMtLjU4MTU3Mi0xMS41NjY5LS41ODE1NzItMi44NDMyOCAwLTUuNjg2NTYuMTI5MTMxLTguNDY1MjAxLjMyMzA4OC0zLjk0MTc5OC4yNTg1ODQtNy44ODM2MDIuNzc1NDQyLTExLjgyNTM3MyAxLjQyMTYxNy0uOTY5MzAyLjEyOTE0NC0xLjkzODYwMi4zMjMxMjUtMi45MDc5MDUuNTE2OTg0LTIuMDAzMTk5LjM4NzY4OS0zLjk0MTc3MS44NDAwNDQtNS44MTU3NDIgMS4yOTIzODYtLjk2OTMuMjU4NTg0LTEuOTM4NjAyLjUxNjk1OC0yLjkwNzkwMy43NzU0MTktLjk2OTI3LjM4NzcxMy0xLjg3Mzk0Ljg0MDA3LTIuNzc4NjQyIDEuMjI3Nzg0LS43MTA4MTEuMzIzMDg4LTEuNDIxNjE5LjY0NjE4Ny0yLjEzMjQzMS45NjkzLS4xMjkxMzkuMDY0NzEtLjI1ODU4LjA2NDcxLS4zMjMwOS4xMjkxNDQtLjY0NjIxLjMyMzA4Ny0xLjIyNzc5LjU4MTU0Ny0xLjgwOTM0MS45MDQ2NzEtLjE5Mzg2MS4wNjQ3MS0uMzIzMTIyLjEyOTEzMi0uNDUyMzUxLjE5Mzg1OS0uNzEwODEuMzIzMDg5LTEuNDIxNjE4LjcxMDgwMy0yLjAwMzIwMSAxLjAzMzkwMi0uNDUyMzUuMTkzODU4LS45MDQ2Ny40NTIzNDMtMS4yOTIzODkuNjQ2MjEzLS4xOTM4NjIuMTI5MTMxLS40NTIzNTMuMjU4NTcyLS41ODE1ODIuMzIzMDg4LS41ODE1NzkuMzIzMDg4LTEuMTYzMTYuNjQ2MTc0LTEuNjgwMTExLjk2OTMtLjU4MTU4MS4zMjMwODctMS4wOTg1MzIuNjQ2MTc1LTEuNTUwODgyLjk2OTI2My0uNDUyMzE4LjMyMzEyNS0uOTA0NjY3LjU4MTU4NS0xLjI5MjM5LjkwNDY3Mi0uMDY0NzQuMDY0NzEtLjEyOTEzOS4wNjQ3MS0uMTkzODYxLjEyOTE0NS0uMzg3NzE5LjI1ODU4My0uODQwMDM5LjU4MTU3MS0xLjIyNzc1OC45MDQ2OTYgMCAwLS4wNjQ3My4wNjQ3LS4xMjkxNC4xMjkxNDItLjMyMzA5LjI1ODU4NC0uNjQ2MjEyLjUxNjk0Ny0uOTY5MzAxLjc3NTQwNy0uMTI5MTM4LjA2NDcxLS4yNTg1ODEuMTkzODU3LS4zODc3Mi4yNTg1ODMtLjMyMzA5LjI1ODU4Ni0uNjQ2MTguNTgxNTg2LS45NjkyNzEuODQwMDctLjA2NDczLjEyOTE0My0uMTkzODU5LjE5Mzg1OC0uMjU4NTgxLjI1ODU4NS0uMzg3NzIuMzg3NzE1LS43NzU0NDEuNzEwODAyLTEuMTYzMTYxIDEuMDk4NTMtLjA2NDczIDAtLjA2NDczLjA2NDcxLS4xMjkxMzkuMTI5MTMxLS4zODc3Mi4zMjMxLS43NzU0MzkuNzEwODE2LTEuMTYzMTU5IDEuMDk4NTQzLS4wNjQ3My4wNjQ3MS0uMDY0NzMuMTI5MTMtLjEyOTE0LjEyOTEzLS4zMjMwOS4zMjMwODktLjY0NjE4LjY0NjIxMy0uOTY5MzAxIDEuMDMzOTAyLS4xMjkxMzcuMTI5MTQzLS4zMjMwOS4yNTg1ODYtLjQ1MjMxOS4zODc3MTUtLjMyMzA5LjM4NzcyOC0uNzEwODExLjc3NTQ0My0xLjA5ODUzIDEuMTYzMTcxLS4wNjQ3My4xMjkxMzItLjE5Mzg2LjE5Mzg1OC0uMjU4NTgyLjMyMzA4Ny0uNTE2OTUyLjUxNjk4My0uOTY5MzAyIDEuMDMzOTI4LTEuNDg2MjUyIDEuNTUwODg1LS4wNjQ3My4wNjQ3MS0uMTI5MTM4LjEyOTEyOC0uMTkzODU5LjE5Mzg1OC0xLjAzMzkzMSAxLjA5ODUyOS0yLjEzMjQ2MyAyLjE5NzA1OS0zLjI5NTU5NCAzLjE2NjM1Mi0xLjE2MzE1OSAxLjAzMzktMi4zOTA5MjIgMi4wMDMyLTMuNjE4NzExIDIuODQzMjUtMS4yOTIzOTIuOTA0Ny0yLjUyMDE1MiAxLjY4MDExLTMuODc3MTczIDIuNDU1NTUtMS4yOTIzOTIuNzEwNzktMi42NDk0MTIgMS4zNTcwMS00LjA3MTAzMiAxLjkzODYtMS4zNTcwMjIuNTgxNTctMi43Nzg2NDEgMS4wOTg1NC00LjIwMDI2NCAxLjU1MDg1LTIuNzE0MDQxLjU4MTU3LTUuNDkyNjg0IDEuNjgwMTEtNy44ODM2MDUgMS44NzM5Ny0uNTE2OTUgMC0xLjA5ODUzMS4xMjkxNS0xLjYxNTQ4Mi4xOTM4NS0uNTgxNTc4LjEyOTE0LTEuMDk4NTI5LjI1ODU5LTEuNjE1NDc5LjM4Nzc0LS41MTY5NTEuMTkzODQtMS4wMzM5MzEuMzg3NzEtMS41NTA4ODMuNTgxNTYtLjUxNjk1MS4xOTM4Ni0xLjAzMzkwMS40NTIzNS0xLjU1MDg1Mi43MTA4My0uNDUyMzUuMzIzMDgtLjk2OTI5OS41ODE1Ny0xLjQyMTY1MS45MDQ2Ni0uNDUyMzIyLjMyMzA5LS45MDQ2NzIuNzEwOC0xLjI5MjM5MyAxLjA5ODUzLS40NTIzMTkuMzIzMTItLjkwNDY2OS43NzU0NS0xLjI5MjM5IDEuMTYzMTUtLjM4NzcyMS40NTIzNy0uNzc1NDQuODQwMDgtMS4wOTg1MzA0IDEuMjkyMzktLjMyMzA5MDEuNTE2OTUtLjcxMDgxMDguOTY5MzEtLjk2OTMwMTYgMS40ODYyNy0uMzIzMDkuNDUyMzUtLjY0NjE3OTkuOTY5MjktLjkwNDY3MDcgMS40ODYyMi0uMjU4NTgxNS41ODE2MS0uNTE2OTQ5OCAxLjA5ODU1LS43MTA4MTA3IDEuNjgwMTQtLjE5Mzg1OTkuNTE2OTUtLjM4NzcxOTkgMS4wOTg1Mi0uNTgxNTc5OSAxLjY4MDExLS4xMjkxMzgyLjUxNjk0LS4yNTg1ODEzIDEuMDMzOS0uMzIzMDg5OCAxLjU1MDgzIDAgLjA2NDgtLjA2NDcxOS4xMjkxNi0uMDY0NzE5LjE5Mzg3LS4xMjkxMzkyLjU4MTYxLS4xMjkxMzkyIDEuMzU3MDYtLjE5Mzg2MDggMS43NDQ3OS0uMDY0NzE5LjQ1MjMyLS4xMjkxMzczLjg0MDAyLS4xMjkxMzczIDEuMjkyMzggMCAuMjU4NTggMCAuNTgxNTUuMDY0NzE5Ljg0MDAzLjA2NDcxOS40NTIzNi4xMjkxMzcxLjg0MDA3LjI1ODU4MTQgMS4yMjc4Mi4xMjkxMzgyLjM4NzY2LjI1ODU4MTUuNzc1MzkuNDUyMzIwMSAxLjE2MzEydi4wNjQ3Yy4xOTM4NTk5LjM4Nzc1LjQ1MjM1MDYuNzc1NDUuNzEwODEwOCAxLjE2MzE3LjI1ODU4MTQuMzg3NzIuNTE2OTgwNC43NzU0NC44NDAwNzA0IDEuMTYzMTcuMzIzMDg5OS4zMjMwOS43MTA4MTA5LjcxMDc4IDEuMDk4NTMwNCAxLjAzMzg5LjM4NzcyMDkuMzg3NzIuNzc1NDQyMS43MTA4MSAxLjIyNzc2MTEgMS4wMzM5IDEuNTUwODgxIDEuMzU3MDMgMS45Mzg2MDEgMS44MDkzOCAzLjk0MTgwNiAyLjg0MzI3LjMyMzA4Ny4xOTM4Ny42NDYyMS4zMjMxMSAxLjAzMzkzLjUxNjk3LjA2NDczIDAgLjEyOTEzOS4wNjQ3LjE5Mzg1OS4wNjQ3IDAgLjEyOTEzIDAgLjE5Mzg3LjA2NDczLjMyMzEzLjA2NDcyLjUxNjk2LjE5Mzg1OSAxLjAzMzg5LjMyMzA5IDEuNTUwODYuMTI5MTM4LjU4MTU4LjMyMzEyMSAxLjA5ODU1LjUxNjk4MSAxLjU1MDg3LjE5Mzg2LjM4NzczLjMyMzA5Ljc3NTQzLjUxNjk1MSAxLjE2MzE3LjA2NDcyLjEyOTE1LjEyOTE0LjI1ODU4LjE5Mzg2LjMyMzA5LjI1ODU4MS41MTY5NC41MTY5NS45NjkzMi43NzU0MSAxLjQyMTYyLjMyMzEyMS40NTIzMy42NDYyMS45MDQ2Ni45NjkyOTkgMS4zNTcwMy4zMjMwOTIuMzg3Ny43MTA4MTMuODQwMDQgMS4wOTg1MzIgMS4yMjc3NS4zODc3MjEuMzg3NzMuNzc1NDQyLjcxMDgzIDEuMjI3NzkzIDEuMDk4NTIgMCAwIC4wNjQ3My4wNjQ4LjEyOTEzNy4wNjQ4LjM4NzcyMi4zMjMxMi43NzU0NC42NDYyMiAxLjE2MzE2Mi45MDQ2Ni40NTIzMi4zMjMxMS45MDQ2Ny41ODE1NyAxLjQyMTYxOS44NDAwNy40NTIzNTEuMjU4NTguOTY5MzAyLjUxNjk1IDEuNDg2MjUyLjcxMDgyLjM4NzcyMS4xOTM4Ni44NDAwNC4zMjMxMSAxLjI5MjM5Mi40NTIzNC4wNjQ3My4wNjQ4LjEyOTEzOC4wNjQ4LjI1ODU4Mi4xMjkxNi4yNTg1ODEuMDY0OC41ODE1NDguMTI5MTIuODQwMDM5LjE5Mzg0LS4xOTM4NTkgMy40ODk0NS0uMjU4NTgyIDYuNzg1MDQuMjU4NTgzIDcuOTQ4MjIuNTgxNTUgMS4yOTIzOCAzLjQyNDgyMS0yLjY0OTQxIDYuMjY4MDk0LTcuMTcyNzctLjM4NzcxOSA0LjQ1ODc1LS42NDYyMTEgOS42OTI5IDAgMTEuMjQzODEuNzEwODA5IDEuNjE1NDUgNC41ODc5ODItMy40MjQ4NyA3Ljk0ODIwMy04Ljk4MjE1IDQ1LjgxNTI2Mi0xMC41OTc1NyA4Ny42MjQxOCAyMS4wNjYgOTIuMDE4MjkgNjUuNzgyNzMtLjg0MDA2LTYuOTc4OTItOS40MzQ0Ni0xMC44NTYwOC0xMy4zNzYyMy05Ljg4Njc3LTEuOTM4NjEgNC43ODE4My01LjIzNDIgMTAuOTIwNjgtMTAuNTMyOTkgMTQuNzMzMjQuNDUyMzMtNC4yNjQ5LjI1ODU2LTguNjU5MDEtLjY0NjE5LTEyLjkyMzkyLTEuNDIxNjUgNS45NDUwMS00LjIwMDMgMTEuNTAyMzItOC4wMTI4NyAxNi4yODQxNS02LjEzODg1Ny40NTIzMi0xMi4yNzc3MjktMi41MjAxOS0xNS41MDg3Mi02Ljk3ODkxLS4yNTg1ODItLjE5Mzg4LS4zMjMwOTEtLjU4MTU5LS41MTY5NTEtLjg0MDA2LS4xOTM4NjItLjQ1MjM4LS4zODc3MTktLjkwNDY3LS41MTY5NTEtMS4zNTcwMy0uMTkzODU5LS40NTIzMi0uMzIzMDg5LS45MDQ2Ny0uMzg3NzE5LTEuMzU2OTktLjA2NDczLS40NTIzNi0uMDY0NzMtLjkwNDY5LS4wNjQ3My0xLjQyMTYzIDAtLjMyMzEyIDAtLjY0NjIgMC0uOTY5MjguMDY0NzMtLjQ1MjM4LjE5Mzg2LS45MDQ3MS4zMjMwOTEtMS4zNTcwNS4xMjkxMzgtLjQ1MjMyLjI1ODU4LS45MDQ2Ny40NTIzNS0xLjM1NzAxLjI1ODU4Mi0uNDUyMzEuNDUyMzItLjkwNDY2Ljc3NTQ0MS0xLjM1Njk4IDEuMDk4NTMtMy4xMDE3OCAxLjA5ODUzLTUuNjIxOTItLjkwNDY3LTcuMTA4MTYtLjM4NzcyMS0uMjU4NTgtLjc3NTQ0MS0uNDUyMzYtMS4yMjc3OTEtLjY0NjIyLS4yNTg1ODQtLjA2NDctLjU4MTU4Mi0uMTkzODYtLjg0MDA0LS4yNTg1Ny0uMTkzODYxLS4wNjQ3LS4zMjMwOS0uMTI5MTYtLjUxNjk1MS0uMTkzODctLjQ1MjM1MS0uMTI5MTQtLjkwNDcwMi0uMjU4NTktMS4zNTcwMjItLjMyMzA5LS40NTIzNS0uMTI5MTMtLjkwNDY3LS4xOTM4Ni0xLjM1NzAyLS4xOTM4Ni0uNDUyMzIxLS4wNjQ4LS45NjkzMDMtLjEyOTE0LTEuNDIxNjIyLS4xMjkxNC0uMzIzMDg5IDAtLjY0NjIxLjA2NDctLjk2OTMwMS4wNjQ3LS41MTY5NDkgMC0uOTY5Mjk5LjA2NDgtMS40MjE2MjEuMTkzODYtLjQ1MjM1LjA2NDgtLjkwNDY2OS4xMjkxMy0xLjM1NzAxOS4yNTg1Ni0uNDUyMzIyLjEyOTE1LS45MDQ2NzMuMjU4NTktMS4zNTcwMjMuNDUyMzgtLjQ1MjMxOS4xOTM4NS0uODQwMDQxLjM4NzcxLTEuMjkyMzg5LjU4MTU3LS4zODc2OS4xOTM4Ny0uNzc1NDEyLjQ1MjMyLTEuMjI3NzYxLjY0NjE4LTE1LjA1NjM3MSA5LjgyMjE3LTYuMDc0MjM1IDMyLjgyNjc0IDQuMjAwMjY0IDM5LjQ4MjU2LTMuODc3MTc1LjcxMDgxLTcuODE4OTQ3IDEuNTUwOS04LjkxNzQ3OSAyLjM5MDkyLS4wNjQ3My4wNjQ3LS4xMjkxMzguMTI5MTUtLjEyOTEzOC4xMjkxNSAyLjc3ODY0MiAxLjY4MDA5IDUuNjg2NTE2IDMuMTAxNzMgOC43MjM2MTYgNC4zMjk0OSA0LjEzNTY2NSAxLjM1NzAyIDguNTI5Nzg2IDIuNTg0NzkgMTAuNDY4Mzg3IDMuMTAxNzZ2LjA2NDdjNS4zNjM0MjQgMS4wOTg1NCAxMC43OTE0OCAxLjQ4NjI2IDE2LjI4NDEzOSAxLjE2MzE3IDI4LjYyNjQ5LTIuMDAzMjEgNTIuMDgzNC0yMy43ODAwMyA1Ni4zNDgzLTUyLjQ3MTExLjEyOTE0LjU4MTU5LjI1ODU4IDEuMDk4NTIuMzg3NzIgMS42ODAxMi4xOTM4NyAxLjE2MzEyLjQ1MjMyIDIuMzkwOS41ODE1NSAzLjYxODY3di4wNjQ4Yy4xMjkxNC41ODE1OC4xOTM4NiAxLjE2MzE1LjI1ODU4IDEuNjgwMXYuMjU4NTljLjA2NDguNTgxNTcuMTI5MTUgMS4xNjMxNi4xMjkxNSAxLjY4MDEuMDY0Ny43MTA4Mi4xMjkxNCAxLjQyMTYyLjEyOTE0IDIuMTMyNDd2MS4wMzM5YzAgLjMyMzEyLjA2NDcuNzEwOC4wNjQ3IDEuMDMzOTIgMCAuMzg3NzMtLjA2NDcuNzc1NDItLjA2NDcgMS4xNjMxNHYuOTA0NjdjMCAuNDUyMzYtLjA2NDguODQwMDYtLjA2NDggMS4yOTI0IDAgLjI1ODU2IDAgLjUxNjk2LS4wNjQ3Ljg0MDA2IDAgLjQ1MjM2LS4wNjQ3LjkwNDY2LS4wNjQ3IDEuNDIxNjItLjA2NDguMTkzODYtLjA2NDguMzg3NzItLjA2NDguNTgxNTktLjA2NDcuNTE2OTYtLjEyOTE0Ljk2OTMtLjE5Mzg3IDEuNDg2MjYgMCAuMTkzODcgMCAuMzg3NzEtLjA2NDcuNTgxNTktLjA2NDguNjQ2MTctLjE5Mzg1IDEuMjI3NzctLjI1ODU1IDEuODczOTR2LjA2NDguMDY0N2MtLjEyOTE0LjU4MTU3LS4yNTg2IDEuMjI3NzYtLjM4Nzc1IDEuODA5MzN2LjE5Mzg3Yy0uMTI5MTIuNTgxNTYtLjI1ODU4IDEuMTYzMTYtLjM4NzcgMS43NDQ3MSAwIC4wNjQ4LS4wNjQ3LjE5Mzg3LS4wNjQ3LjI1ODU2LS4xMjkxNi41ODE2LS4yNTg2IDEuMTYzMTctLjQ1MjMyIDEuNzQ0Nzh2LjE5Mzg0Yy0uMTkzODYuNjQ2MTctLjM4NzczIDEuMjI3NzYtLjUxNjk4IDEuODA5MzQtLjA2NDcuMDY0Ny0uMDY0Ny4xMjkxNC0uMDY0Ny4xMjkxNC0uMTkzODcuNjQ2MjEtLjM4NzcxIDEuMjkyMzktLjU4MTU1IDEuOTM4NTgtLjI1ODU4LjY0NjIxLS40NTIzNCAxLjIyNzc4LS43MTA4MSAxLjg3Mzk4LS4yNTg1Ny42NDYyLS40NTIzNiAxLjI5MjQtLjcxMDgzIDEuODczOTYtLjI1ODU5LjY0NjIyLS41MTY5NyAxLjIyNzgtLjc3NTQzIDEuODczOTdoLS4wNjQ4Yy0uMjU4Ni41ODE1Ny0uNTE2OTkgMS4yMjc3OS0uODQwMSAxLjgwOTM4LS4wNjQ3LjE5MzgzLS4xMjkxMi4zMjMwOS0uMTkzODQuNDUyMy0uMDY0Ny4wNjQ4LS4wNjQ3LjEyOTE0LS4xMjkxNC4xOTM4OC00LjIwMDI2IDguNDY1MTQtMTAuNDAzNzcgMTUuODk2MzktMTguMTU4MDkgMjEuNzEyMTctLjUxNjk1LjMyMzA5LTEuMDMzOTIuNzEwODItMS41NTA4NiAxLjA5ODUyLS4xMjkxNS4xMjkxNS0uMzIzMTIuMTkzODgtLjQ1MjM1LjMyMzA5LS40NTIzNS4zMjMxLS45MDQ2OC42NDYxOC0xLjQyMTYxLjk2OTMxbC4xOTM4NS4zODc3MmguMDY0N2MuOTA0NjYtLjEyOTEzIDEuODA5MzQtLjI1ODU4IDIuNzE0MDItLjM4NzcyaC4wNjQ3YzEuNjgwMTItLjI1ODU4IDMuMzYwMjMtLjU4MTU4IDUuMDQwMzUtLjkwNDY3LjQ1MjMxLS4wNjQ4Ljk2OTMtLjE5Mzg1IDEuNDIxNjEtLjMyMzEyLjMyMzA5LS4wNjQ4LjU4MTU4LS4xMjkxMy45MDQ2Ny0uMTkzODYuNDUyMzUtLjA2NDguOTA0NjgtLjE5Mzg2IDEuMzU3MDQtLjI1ODU3LjM4NzctLjEyOTE0Ljc3NTQzLS4xOTM4OCAxLjE2MzE0LS4zMjMxIDYuNDYxOTUtMS41NTA4OSAxMi43MzAwNy0zLjY4MzM1IDE4LjczOTY1LTYuMjAzNDktMTAuMjc0NDggMTQuMDIyNDMtMjQuMDM4NDcgMjUuMzMwODctNDAuMTI4NzQgMzIuNzYyMTIgNy40MzEyNy0uNTE2OTYgMTQuODYyNTEtMS43NDQ3MiAyMi4wMzUyOC0zLjgxMjU0IDI2LjA0MTctNy42ODk3NyA0Ny45NDc3Mi0yNS4yMDE2NSA2MS4wNjU0OS00OC43ODc4LTIuNjQ5NCAxNC45MjcxNC04LjU5NDQgMjkuMTQzNDQtMTcuMzgyNjUgNDEuNTUwNDEgNi4yNjgwOS00LjEzNTY5IDEyLjAxOTIzLTguOTE3NTMgMTcuMjUzNDItMTQuMzQ1NTcgMTQuNDc0NzgtMTUuMTIwOTcgMjMuOTczODgtMzQuMzEyOTYgMjcuMjA0ODMtNTQuOTI2NjUgMi4xOTcwOCAxMC4yMDk5IDIuODQzMjggMjAuNzQyOTMgMS44NzM5OCAzMS4xNDY2NiA0Ni42NTUzNC02NS4wNzE5MiAzLjg3NzE3LTEzMi41MzQ3Ni0xNC4wMjI0NC0xNTAuMzA1MTQxLS4wNjQ4LS4xMjkxMzMtLjEyOTE0LS4xOTM4NTgtLjEyOTE0LS4zMjMwODktLjA2NDguMDY0Ny0uMDY0OC4wNjQ3LS4wNjQ4LjEyOTE0NCAwLS4wNjQ3MSAwLS4wNjQ3MS0uMDY0Ny0uMTI5MTQ0IDAgLjc3NTQ0Mi0uMDY0NyAxLjU1MDg0OC0uMTI5MTQgMi4zMjYyOTEtLjE5Mzg3IDEuNDg2MjUtLjM4NzcxIDIuOTA3ODc5LS42NDYyMSA0LjMyOTUyOS0uMzIzMDggMS40MjE2Mi0uNzEwODEgMi44NDMyMi0xLjA5ODU0IDQuMjY0ODgtLjQ1MjMyIDEuMzU2OTktLjk2OTI1IDIuNzc4NjItMS41NTA4NSA0LjEzNTY1LS41ODE1OCAxLjI5MjM3LTEuMjI3NzggMi42NDkzOS0xLjkzODU5IDMuOTQxOC0uNzEwODIgMS4yMjc3OC0xLjQ4NjI1IDIuNTIwMTYtMi4zMjYyOSAzLjY4MzMtLjg0MDA2IDEuMjI3OC0xLjc0NDc0IDIuMzkwOTMtMi42NDk0MyAzLjQ4OTQ0LS45NjkzMSAxLjE2MzE4LTIuMDAzMTkgMi4xOTcxLTMuMDM3MTIgMy4yMzEwMS0uNjQ2MTguNTgxNTgtMS4yMjc3NSAxLjA5ODUzLTEuODczOTggMS42MTU0Ni0uNTE2OTQuNDUyMzYtLjk2OTI3Ljg0MDA5LTEuNDg2MjUgMS4yOTIzOS0xLjE2MzE0LjkwNDY4LTIuMzI2MjkgMS43NDQ3NC0zLjYxODY3IDIuNTIwMTktMS4yMjc3OC43NzU0Mi0yLjUyMDE0IDEuNTUwODYtMy44MTI1NCAyLjE5NzA3LTEuMzU3MDIuNjQ2MTktMi43MTQwNCAxLjIyNzc2LTQuMDcxMDQgMS44MDkzNS0xLjM1NzAyLjUxNjkzLTIuNzc4NjQuOTY5MjgtNC4yMDAzMSAxLjM1NzAxLTEuNDIxNjEuMzg3Ny0yLjkwNzg1LjcxMDgxLTQuMzI5NDkuOTY5MjgtMS40ODYyMy4yNTg1OC0yLjk3MjQ5LjM4NzcxLTQuMzk0MTIuNTE2OTctMS4wMzM5Mi4wNjQ3LTIuMDY3ODIuMTI5MTUtMy4xMDE3NS4xMjkxNS0xLjQ4NjI2IDAtMi45NzI0OC0uMTI5MTUtNC4zOTQxMi0uMjU4NTgtMS40ODYyNC0uMTI5MTQtMi45NzI1MS0uMzIzMTQtNC4zOTQxMy0uNjQ2MjMtMS40ODYyNS0uMjU4NTgtMi45MDc5LS42NDYyMS00LjMyOTUzLTEuMDk4NTFoLS4wNjQ3YzEuNDIxNjMtLjEyOTE0IDIuODQzMjctLjI1ODYgNC4yNjQ5Mi0uNTE2OTcgMS40ODYyMi0uMjU4NTggMi45MDc4NS0uNTgxNTYgNC4zMjk1LS45NjkzMSAxLjQyMTYyLS4zODc3MSAyLjg0MzI1LS44NDAwNiA0LjIwMDI2LTEuMzU3IDEuNDIxNjItLjUxNjk2IDIuNzc4NjUtMS4xNjMxMyA0LjA3MTA1LTEuODA5MzYgMS4zNTctLjY0NjIxIDIuNTg0NzgtMS4zNTcgMy44NzcxNi0yLjEzMjQ0IDEuMjI3NzYtLjg0MDA1IDIuNDU1NTQtMS42ODAwOSAzLjYxODY5LTIuNTg0NzkgMS4xNjMxNi0uOTA0NjYgMi4yNjE2Ny0xLjg3Mzk0IDMuMjk1NjItMi45MDc4NiAxLjA5ODUzLS45NjkzMiAyLjA2NzgxLTIuMDY3ODQgMy4wMzcxMS0zLjE2NjM4Ljk2OTI3LTEuMTYzMTIgMS44NzM5Ni0yLjMyNjI4IDIuNzE0MDItMy40ODk0NC4xMjkxNS0uMTkzODcuMjU4NTktLjQ1MjMyLjM4Nzc0LS42NDYxOS42NDYxNy0xLjAzMzkyIDEuMjkyMzUtMi4wNjc4MyAxLjg3MzkyLTMuMTAxNzYuNzEwODMtMS4yOTIzOSAxLjM1NzA0LTIuNTg0NzkgMS45Mzg2LTMuOTQxNzcuNTgxNTktMS4zNTcwMiAxLjA5ODU1LTIuNzE0MDUgMS41NTA4OS00LjEzNTY2LjQ1MjMyLTEuMzU3MDMuNzc1NDItMi43Nzg2NCAxLjA5ODUzLTQuMjAwMjU4LjI1ODU5LTEuNDg2MjU4LjUxNjk0LTIuOTA3OTEuNjQ2MTktNC4zMjk1MjguMTI5MTQtMS40ODYyNDQuMjU4NTctMi45NzI1MDMuMjU4NTctNC4zOTQxMTkgMC0xLjAzMzkyOC0uMDY0OC0yLjA2NzgzLS4xMjkxMi0zLjEwMTczMy0uMTI5MTUtMS40ODYyNDYtLjMyMzExLTIuOTA3OS0uNTE2OTYtNC4zMjk1MTktLjI1ODU5LTEuNDg2MjU3LS41ODE1Ny0yLjkwNzg3My0uOTY5MzEtNC4zMjk1MjktLjQ1MjMxLTEuMzU2OTkxLS45MDQ2Ny0yLjc3ODYzNC0xLjQyMTYxLTQuMTM1NjIzLS41MTY5OS0xLjM1NzAyOC0xLjE2MzE1LTIuNzE0MDQyLTEuODA5MzgtNC4wMDY0NDMtLjcxMDgxLTEuMjkyMzg4LTEuNDIxNjEtMi41ODQ3NzYtMi4xOTcwNC0zLjgxMjUzNi0uODQwMDUtMS4yMjc3Ni0xLjY4MDEzLTIuMzkwOTE3LTIuNTg0OC0zLjU1NDA4Ny0uOTY5MjctMS4wOTg1MzEtMS45Mzg1Ny0yLjE5NzA2LTIuOTcyNTEtMy4yOTU1OS0uNTE2OTQtLjUxNjk0Ny0xLjA5ODUzLTEuMDk4NTMyLTEuNjgwMS0xLjYxNTQ3Ni0yLjkwNzg3LTIuMjYxNy01Ljk0NS00LjM5NDE1OS04Ljk4MjEtNi4zMzI3MzItLjQ1MjMzLS4yNTg1NzQtLjg0MDA1LS40NTIzNDItMS4yOTI0LS42NDYyMTItMi4xMzI0Ni0xLjM1Njk5Mi00LjEzNTY2LTIuMDY3ODMxLTYuMTM4ODUtMi43MTQwMDd6IiBmaWxsPSIjZTAyMzRlIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTQxLjQxMjQ4NykiLz48L3N2Zz4=">
+<img height="70px" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjI1MDAiIHZpZXdCb3g9Ii0yOS4zMDQyNTUzNiAtMzcuNTgzNTcwMjIgNDY5LjMzMzUyOTU4IDQ5Ni4yMjY1MjAwMSIgd2lkdGg9IjI1MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2U3MzUyYyI+PHBhdGggZD0ibTEzMS45NjcgMjk4LjA3M2EyOC4xODYgMjguMTg2IDAgMCAxIC0zMy42ODggMjcuNjQ3IDI4LjE4NSAyOC4xODUgMCAwIDEgLTIyLjE0Ny0yMi4xNDcgMjguMTkgMjguMTkgMCAwIDEgNDcuNTc5LTI1LjQzMiAyOC4xOSAyOC4xOSAwIDAgMSA4LjI1NiAxOS45MzJ6bTI0NS45NC0yOS4zNDJhMjkyLjE2NyAyOTIuMTY3IDAgMCAwIC0yNDcuNjAyLTI0Ny42MDIgMTg1LjMzNCAxODUuMzM0IDAgMCAwIC00MC45NSAyOS41MjJ2MjcuMjM2YTIzMS45ODQgMjMxLjk4NCAwIDAgMSAyMzEuNzk1IDIzMS42MDNoMjcuMjM3YTE5NS4yMSAxOTUuMjEgMCAwIDAgMjkuNTIxLTQwLjc1OXoiLz48cGF0aCBkPSJtMzk5Ljk2MSAxODMuMjI4YTE4My4yMTkgMTgzLjIxOSAwIDAgMCAtMTEzLjc2OC0xNjkuNTUzIDE4My4yMjUgMTgzLjIyNSAwIDAgMCAtNzAuNDEtMTMuNjczYy02LjQ3NSAwLTEyLjc2MSAwLTE5LjA0Ni45NTNsLTQuMTkgMTIuMTlhMzE1LjIyNCAzMTUuMjI0IDAgMCAxIDE5My4xMyAxOTIuOTM5bDEyLjE4OS00LjM4MWMwLTYuMDk1IDEuMTQzLTEyLjE5IDEuMTQzLTE5LjA0Nm0tMTgxLjExOCAyMTcuMzA3YTIxNy44OTEgMjE3Ljg5MSAwIDAgMSAtMjE3Ljg5LTIxNi45MzggMjE2LjM2NyAyMTYuMzY3IDAgMCAxIDYzLjgwNS0xNTQuMDg1bDEyLjM4IDExLjYxOWEyMDEuMTI3IDIwMS4xMjcgMCAwIDAgMCAyODUuNjk1IDIwMS4xMzMgMjAxLjEzMyAwIDAgMCAyODUuNjk1IDBsMTEuNjE5IDExLjYxOGEyMTYuMTg0IDIxNi4xODQgMCAwIDEgLTE1NS42MDkgNjIuMDkxeiIvPjxwYXRoIGQ9Im0yMTUuNDM4IDMyMi4wNzRhMTI2LjY1IDEyNi42NSAwIDAgMCAtNDkuNzExLTExMi41NjQgMTIzLjk5OCAxMjMuOTk4IDAgMCAwIC02My44MDUtMjUuOTAzIDExLjYxNSAxMS42MTUgMCAwIDEgLTEwLjA5NS0xMi4xODkgMTEuMjQgMTEuMjQgMCAwIDEgNy45NDUtOS44NjUgMTEuMjIyIDExLjIyMiAwIDAgMSA0LjQzNi0uNDIgMTQ5LjUxNiAxNDkuNTE2IDAgMCAxIDEzMy4zMjQgMTYzLjQxNyAxMzAuNDQgMTMwLjQ0IDAgMCAxIC00Ljk1MiAyNS43MTNsMzMuMTQgOS4zMzJhMTgzLjk2MyAxODMuOTYzIDAgMCAwIDI4LjU3LTEwLjg1NiAyMDIuNzUzIDIwMi43NTMgMCAwIDAgMy42MTktMzkuMDQ1IDIwOS41MTIgMjA5LjUxMiAwIDAgMCAtMTc3LjcwMi0yMDYuODQzIDkyLjE5OSA5Mi4xOTkgMCAwIDAgLTMzLjMzMiAwIDcyLjU2NyA3Mi41NjcgMCAwIDAgLTM1Ljk5NyAyMi4yODQgNzEuMjM0IDcxLjIzNCAwIDAgMCAzMS44MDcgMTE0LjI3OCAxNjQuODgyIDE2NC44ODIgMCAwIDAgMTcuOTA0IDMuMjM4IDY2Ljg1NiA2Ni44NTYgMCAwIDEgNTUuNjE1IDY1LjkgNjYuMDkgNjYuMDkgMCAwIDEgLTEwLjY2NiAzNS45OThsMjIuODU2IDE0LjY2NmExNjkuNjc1IDE2OS42NzUgMCAwIDAgMzQuMjgzIDUuNzEzIDEyNS4zMzUgMTI1LjMzNSAwIDAgMCAxMi41NzEtNDMuODA2Ii8+PC9nPjwvc3ZnPg==">
+<img height="70px" src="./assets/logos/blender.gif">
 </td>
-<td>
-<b style="font-size:30px">I’m learning</b>
-</td>
-<td>
-<b style="font-size:30px">In the memory banks</b>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://skillicons.dev/icons?i=r,bash,git,sass,html,css,bootstrap,github,githubactions,md&perline=3" />
-</td>
-<td>
-<img src="https://skillicons.dev/icons?i=js,regex&perline=3" /> <br>
-<img src="https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=Airtable&logoColor=white" /><br>
-<img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white" /><br>
-<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white" /><br>
-</td>
-<td>
-<img src="https://skillicons.dev/icons?i=matlab" />
-</td>
-</tr>
-</table>
-<h2 id="ideguis-i-like">IDE/GUI’s I like</h2>
+</tr></tbody></table>
+<h2 id="best-songs-of-all-time-">Best songs of all time 🎵🎶 </h2>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4sul7yXzdSelyV7bGzNv7U?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2Co0IjcLTSHMtodwD4gzfg?utm_source=generator&amp;theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/05kv07AcsAQ0HnLsdb4NUA?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/04pktsRGucPz8jOgUSx9jp?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5aBGhgBAQui7ESYNH0zFJB?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2P5yIMu2DNeMXTyOANKS6k?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2fDdW9LPYBD5KwYXRYpWce?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+<h2 id="my-down-time">My down time </h2>
 <p align="center">
-<img src="https://img.shields.io/badge/-positron-61DAFB?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
-<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
-<img src="https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge&logo=RStudio&logoColor=white" />
-<img src="https://img.shields.io/badge/Inkscape-000000?style=for-the-badge&logo=Inkscape&logoColor=white" />
-</p>
-<h2 id="blog-posts">Blog posts</h2>
-<p>To list files in a specific folder of a public GitHub repository using
-R, you can utilize the GitHub API. Here’s a concise example:</p>
-<p>🎉 <a href="https://drmowinckels.io/">DrMowinckels.io</a> has <strong>46</strong> posts since
-<strong>NA</strong>!</p>
-<p>📅 That’s a post roughly every <strong>NA</strong> days, or about <strong>NA</strong> posts per
-month.</p>
-<p>✍️ The last post was published <strong>NA</strong> days ago (<a href="https://drmowinckels.io/blog/httr2_client">“Decoding OAuth2 M2M
-with httr2: Client Setup &amp; API
-Testing”</a>).</p>
-<p>😉 I’ll post as often as I am able, and hope people find it interesting.
-I’d love your feedback in the comments!</p>
-<img src="file:///i:\Proyectos\docker\SaulChoque\README-files\plot-1.png" width="100%" />
-<details>
-<summary>
-📂 Click to expand a full list of posts
-</summary>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Date</th>
-<th style="text-align:left">Title</th>
+<img src="https://img.shields.io/badge/Amazon%20Prime-00A8E1?style=for-the-badge&amp;logo=netflix&amp;logoColor=white">
+<img src="https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&amp;logo=netflix&amp;logoColor=white">
+<img src="https://img.shields.io/badge/Steam-000000?style=for-the-badge&amp;logo=steam&amp;logoColor=white">
+<img src="https://img.shields.io/badge/Spotify-1ED760?&amp;style=for-the-badge&amp;logo=spotify&amp;logoColor=white">
+<img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif">
+</p><table style="margin: 5px">
+<tbody><tr>
+<td>
+<a href="https://github.com/anuraghazra/github-readme-stats">
+<img src="https://github-readme-stats.vercel.app/api?username=SaulChoque&amp;show_icons=true&amp;theme=transparent" alt="GitHub Stats">
+</a>
+</td>
+<td>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=SaulChoque&amp;theme=transparent&amp;hide_border=false" alt="GitHub Streak Stats">
+</td>
+<td>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SaulChoque&amp;theme=transparent&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact" alt="Top Languages">
+</td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">NA</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/httr2_client">“Decoding OAuth2 M2M with httr2: Client Setup &amp; API Testing”</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2025-06-02</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/visible-pca">“Unmasking Long Covid: PCA &amp; Clustering Analysis of Symptom Syndromes”</a></td>
-</tr>
-<tr>
-<td style="text-align:left">NA</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/visible">A year with Visible Long-Covid Tracking</a></td>
-</tr>
-<tr>
-<td style="text-align:left">NA</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/positron-debugging">“Positron: current joys and pains”</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2025-03-03</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/ollama">Harness Local LLMs and GitHub Copilot for Enhanced R Package Development</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2025-02-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/linkedin-api">Cracking the LinkedIn API through R</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2025-01-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/the-difficult-year">The difficult year</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-12-02</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/bluesky">Posting to Bluesky from R</a></td>
-</tr>
-<tr>
-<td style="text-align:left">NA</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/lapply-files">Reading in multiple files without loops</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-10-07</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/ai-blog-summary">Creating post summary with AI from Hugging Face</a></td>
-</tr>
-<tr>
-<td style="text-align:left">NA</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/fair-blog">Making your blog FAIR</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-08-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/positron">Positron IDE - A new IDE for data science</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-07-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/github-profile">Improving your GitHub Profile</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-06-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/rproject">Customise your R startup message</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-05-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/ide">The IDEs I use</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-04-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/git-clean-woes">Too much git cleaning</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-03-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/freesurfer-lmm-r">Setting up a Freesurfer LMM through R</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-02-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/teaching-unlocks">Teaching you - teaching me</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2024-01-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/newyear-newblog">New year, New blog</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2023-11-03</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/reorganising-hugo">Reorganising Hugo Content and Aliasing</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2023-09-26</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/positconf-2023">Posit::conf 2023</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2022-12-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/advent-of-r-functions">Advent of R Functions</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2022-11-07</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/lets-get-applying">Lets Get Applying</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2021-12-17</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/rmarkdown-child-templates">Rmarkdown Child Templates</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2021-12-04</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/adding-giscus-to-your-blogdown-site">Adding giscus to your blogdown site</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2021-03-23</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/using-github-actions-to-build-your-hugo-website">Using GitHub Actions to Build your Hugo Website</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2021-03-14</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/new-ggseg-with-geom">New {ggseg} with Geom!</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2020-12-31</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/new-year-s-wishes">New Years Wishes</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2020-12-25</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/r-package-advent-calendar">R-Package Advent Calendar 2020</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2020-06-24</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/the-linear-regression-family-in-r">The Linear Regression Family in R</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2020-05-25</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/changing-you-blogdown-workflow">Changing your Blogdown Workflow</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2020-04-30</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/using-freesurfer-annotation-files-to-plot-in-r">Using Freesurfer annotation files to plot in R</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2019-12-11</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/do-you-wanna-build-a-snowman">Do you wanna build a snowman?</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2019-12-06</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/ggseg3d-creating-interactive-brain-segmentation-plots-with-plotly">ggseg3d - creating interactive brain segmentation plots with plotly</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2019-11-16</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/plotting-gamm-interactions-with-ggplot2">Plotting GAMM interactions with ggplot2</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2019-07-17</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/r-for-psychologists-part-ii">“R for Psychologists - part II”</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2019-02-02</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/building-tidy-tools-a-quick-recap-of-rstudio-conf-2019-workshop">Building tidy tools - a quick recap of RStudio::conf 2019 workshop &amp; teeny demonstration</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2019-01-19</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/why-rstudio-conf-is-the-best-conference-experience-i-have-had">Why RStudio::conf is the best conference experience I have had</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2018-12-13</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/christmas-tree-in-ggplot">Christmas tree in ggplot</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2018-11-09</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/r-just-dive-into-it">R for psychologists - just dive into it!</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2018-10-01</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/get-the-brain-animated">Get the brain animated!</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2018-08-30</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/introducing-the-ggseg-r-package-for-brain-segmentations">Introducing the ggseg R-package for brain segmentations</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2018-05-25</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/circluar-plots-in-r-and-adding-images">Circular plots in R and adding images</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2018-05-07</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/adding-external-images-to-plots">Adding external images to plots</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2018-04-05</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/gamm-random-effects">GAMM random effects</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2018-03-08</td>
-<td style="text-align:left"><a href="https://drmowinckels.io/blog/gamm-spaghetti-plots-in-r-with-ggplot">GAMM spaghetti plots in R with ggplot</a></td>
-</tr>
-</tbody>
-</table>
-</details>
-<h2 id="my-down-time">My down time</h2>
-<p align="center">
-<img src="https://img.shields.io/badge/Amazon%20Prime-00A8E1?style=for-the-badge&logo=netflix&logoColor=white" />
-<img src="https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white" />
-<img src="https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white" />
-<img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" />
-<img src="https://camo.githubusercontent.com/0ff8e3b5f017aed3d006a903cb50b7d7d6fd1fa6bf8e1c020270c6c7c76d0870/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4170706c652b545626636f6c6f723d303030303030266c6f676f3d4170706c652b5456266c6f676f436f6c6f723d464646464646266c6162656c3d" />
-</p>
-<p><em>Updated 2025-07-23 01:44:48.235811</em></p>
-<!--
-**SaulChoque/SaulChoque** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-            
-            
-        </body>
-        </html>
+</tbody></table>
+<p></p>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

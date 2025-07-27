@@ -1,34 +1,31 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <img src="./assets/images/mandarina.png" height="150px" />
-<div style="display: flex; flex-direction: row; gap: 10px;">
-    <img src="./assets/images/spongebob.gif">
-    <div>
-Hi, my name is Saul, I'm from Bolivia
-and I'm into computer stuff I guess
 
-- How to reach me:
-- email:
-[baulchoc@gmail.com](baulchoc@gmail.com)
-- website: 
-[Baluchop](http://baluchop.sendbol.lat/)
+<table style="width:100%; border-spacing: 10px;">
+    <tr>
+        <td style="width:30%;">
+            <img src="./assets/images/spongebob.gif" alt="Spongebob" style="width:100%;">
+        </td>
+        <td style="width:70%;">
+            <p>Hi, my name is Saul, I'm from Bolivia</p>
+            <p>and I'm into computer stuff I guess</p>
+            <ul>
+                <li>How to reach me:</li>
+                <ul>
+                    <li>Email: <a href="mailto:baulchoc@gmail.com">baulchoc@gmail.com</a></li>
+                    <li>Website: <a href="http://baluchop.sendbol.lat/">Baluchop</a></li>
+                </ul>
+            </ul>
+        </td>
+    </tr>
+</table>
 
-## About Me
-Currently, I'm studying a Software Development degree at UMSA.
-I’m volunteering at [AsoblockchainBolivia](https://asoblockchainbolivia.org/) where I particularly focus on Web 3 solutions and maintenance of Web 2 projects.
-
-I making an internship as a software developer at [BlockchainConsultora](https://blockchainconsultora.com/es) mostly doing web 3 stuff too.
-
-Aaaalso, I have a YouTube channel (which I don't use {I'll upload something eventually just wait} ). 
-    </div>
-
-
-
-</div>
-
-
-
-
+<h2>About Me</h2>
+<p>Currently, I'm studying a Software Development degree at UMSA.</p>
+<p>I’m volunteering at <a href="https://asoblockchainbolivia.org/">AsoblockchainBolivia</a> where I particularly focus on Web 3 solutions and maintenance of Web 2 projects.</p>
+<p>I’m making an internship as a software developer at <a href="https://blockchainconsultora.com/es">BlockchainConsultora</a> mostly doing web 3 stuff too.</p>
+<p>Aaaalso, I have a YouTube channel (which I don't use {I'll upload something eventually just wait}).</p>
 
 <br>
 

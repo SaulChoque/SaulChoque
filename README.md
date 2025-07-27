@@ -1,22 +1,17 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<img height="150px" src="./assets/images/mandarina.png" />
-<br>
-Hi, my name is Saul, I'm from bolivia 
-<br>
-<img src="./assets/images/spongebob.gif">
-
-<br>
+<img src="./assets/images/mandarina.png" height="150px" />
+<div style="display: flex; flex-direction: row; gap: 10px;">
+    <img src="./assets/images/spongebob.gif">
+    <div>
+Hi, my name is Saul, I'm from Bolivia
 and I'm into computer stuff I guess
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-- Pronouns: He/Him
 - How to reach me:
-  - email:
-    [baulchoc@gmail.com](baulchoc@gmail.com)
-  - website: 
-    [Baluchop](http://baluchop.sendbol.lat/)
+- email:
+[baulchoc@gmail.com](baulchoc@gmail.com)
+- website: 
+[Baluchop](http://baluchop.sendbol.lat/)
 
 ## About Me
 Currently, I'm studying a Software Development degree at UMSA.
@@ -25,7 +20,19 @@ I’m volunteering at [AsoblockchainBolivia](https://asoblockchainbolivia.org/) 
 I making an internship as a software developer at [BlockchainConsultora](https://blockchainconsultora.com/es) mostly doing web 3 stuff too.
 
 Aaaalso, I have a YouTube channel (which I don't use {I'll upload something eventually just wait} ). 
+    </div>
 
+
+
+</div>
+
+
+
+
+
+<br>
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
 ## Skills
